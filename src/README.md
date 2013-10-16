@@ -1,13 +1,14 @@
-To compile the sources, you need OCaml 4 (it *might* work with 3.12) and Make.
+# frag
 
-You may simply compile the sources with the following command:
-<code>make mpp</code>
+''frag'' is a tool to extract fragments of a file.
 
-If you want to compile with ocamlopt instead of ocamlc, use instead the following command:
-<code>make mpp.opt</code>
-
-If something isn't right, please feel free to send me an email: philippe.wang@cl.cam.ac.uk
+You may run  ./frag -help to see its documentation (implemented using Core.Std.Command).
 
 
+### Implementation details
+It is implemented in OCaml.
+It uses Core (an OCaml library by Jane Street), Str (which will be eventually replaced by Re),
+and bits of MPP.
 
+frag used to be embedded in MPP, but is now a standalone program.
 
