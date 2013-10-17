@@ -7,8 +7,8 @@
 
 let frag fl fc fr tl tc tr cl cc filename (out:string option) =
   match out with
-    | None -> Libmpp_fragment.fragment fl fc fr tl tc tr cl cc filename (Mpp_out.Out_channel Pervasives.stdout)
-    | Some f -> Libmpp_fragment.fragment fl fc fr tl tc tr cl cc filename (Mpp_out.Out_channel (Pervasives.open_out f))
+    | None -> Fragment.fragment fl fc fr tl tc tr cl cc filename (Mpp_out.Out_channel Pervasives.stdout)
+    | Some f -> Fragment.fragment fl fc fr tl tc tr cl cc filename (Mpp_out.Out_channel (Pervasives.open_out f))
 
 (* open Core.Std *)
 
