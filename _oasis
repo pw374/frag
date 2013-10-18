@@ -1,0 +1,24 @@
+# -*-conf-*-
+OASISFormat: 0.3
+Name:        frag
+Version:     0.1.0
+Synopsis:    File fragment extraction
+Description: A tool to extract fragments from a file.
+Authors:     Philippe Wang <philippe.wang@gmail.com>
+Maintainers: Philippe Wang <philippe.wang@gmail.com>
+License:     ISC
+Homepage:    https://github.com/pw374/frag
+Plugins:     META (0.3), StdFiles (0.3)
+
+Executable "frag"
+  Path:         src
+  BuildTools:   ocamlbuild
+  MainIs:       fragment_main.ml
+  BuildDepends: mpp,threads,core,str,re
+  CompiledObject: best
+
+SourceRepository master
+  Type:       git
+  Location:   https://github.com/pw374/frag.git
+  Browser:    https://github.com/pw374/frag
+
