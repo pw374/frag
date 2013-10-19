@@ -17,3 +17,7 @@ frag.opt:fragment.ml fragment_main.ml
 install:frag.opt
 	cp frag.opt ${PREFIX}/bin/frag
 
+
+clean:
+	rm -f *.cm[ioxa] *.o *~
+
